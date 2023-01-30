@@ -1,0 +1,4 @@
+https://github.com/TencentARC/GFPGAN/releases/download/v1.3.0/GFPGANv1.3.pth
+  out=qi-stable-diffusion-cpuonly/src/gfpgan/experiments/pretrained_models/GFPGANv1.3.pth
+https://huggingface.co/CompVis/stable-diffusion-v-1-4-original/resolve/main/sd-v1-4.ckpt
+  out=qi-stable-diffusion-cpuonly/models/ldm/stable-diffusion-v1/model.ckpt

@@ -1,0 +1,23 @@
+version: '3.9'
+name: qi-stable-diffusion-cpuonly-docker
+
+x-base_service: &base_service
+    ports:
+      - "7860:7860"
+    volumes:
+      - &v1 ./data:/data
+      - &v2 ./output:/output
+
+
+services:
+  download:
+    build: ./services/download/
+    profiles: ["download"]
+    volumes:
+      - *v1
+
+  auto:
+    build: ./services/auto/
+    profiles: ["auto"]
+    volumes:
+      - *v1
